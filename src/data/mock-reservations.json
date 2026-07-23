@@ -1,0 +1,13 @@
+[
+	{
+		"reservationId": "res-001",
+		"partName": "Bando High-Performance Drive Belt",
+		"make": "Yamaha",
+		"model": "NMAX 155",
+		"shop": "SpeedTech Moto Parts & Supply",
+		"location": "Quezon City",
+		"status": "Ready for Pickup",
+		"reservedDate": "2 hrs ago",
+		"image": "https://via.placeholder.com/80"
+	}
+]

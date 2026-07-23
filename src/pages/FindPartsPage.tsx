@@ -8,6 +8,7 @@ import { ShopsList } from '../components/find-parts/ShopsList';
 import type { FilterValues, PartResult, Garage } from '../components/find-parts/types';
 import mockParts from '../data/mock-parts.json';
 import mockShops from '../data/mock-shops.json';
+import mockBikes from '../data/mock-bikes.json';
 
 const years = ['2026', '2025', '2024', '2023', '2022'];
 const makes = ['Honda', 'Yamaha', 'Kawasaki', 'Suzuki'];
@@ -25,21 +26,23 @@ const categories = [
 	'Bodywork',
 ];
 
-const garages: Garage[] = [
-	{ id: '1', year: '2025', make: 'Honda', model: 'CB500F' },
-	{ id: '2', year: '2022', make: 'Yamaha', model: 'MT-07' },
-	{ id: '3', year: '2023', make: 'Kawasaki', model: 'Z650' },
-];
+// Convert bikes from mock data to Garage format
+const garages: Garage[] = mockBikes.map((bike) => ({
+	id: bike.bikeId,
+	year: bike.year.toString(),
+	make: bike.make,
+	model: bike.model,
+}));
 
 const sampleResults: PartResult[] = mockParts as PartResult[];
 
 export const FindPartsPage: React.FC = () => {
-	const [selectedGarageId, setSelectedGarageId] = useState('1');
+	const [selectedGarageId, setSelectedGarageId] = useState(garages[0]?.id || '1');
 	const [showFilters, setShowFilters] = useState(false);
 	const [filters, setFilters] = useState<FilterValues>({
-		year: '2025',
-		make: 'Honda',
-		model: 'CB500F',
+		year: garages[0]?.year || '2025',
+		make: garages[0]?.make || 'Honda',
+		model: garages[0]?.model || 'CB500F',
 		category: '',
 		keyword: '',
 	});
@@ -76,6 +79,19 @@ export const FindPartsPage: React.FC = () => {
 		handleFilterChange('model', firstModel);
 	};
 
+	const handleGarageChange = (garageId: string) => {
+		const selectedGarage = garages.find((g) => g.id === garageId);
+		if (selectedGarage) {
+			setSelectedGarageId(garageId);
+			setFilters((current) => ({
+				...current,
+				year: selectedGarage.year,
+				make: selectedGarage.make,
+				model: selectedGarage.model,
+			}));
+		}
+	};
+
 	// Calculate price range (mock data - could be dynamic based on parts)
 	const priceRange = '$18 – $25';
 
@@ -94,7 +110,7 @@ export const FindPartsPage: React.FC = () => {
 				onSearchChange={(value) => handleFilterChange('keyword', value)}
 				selectedGarage={selectedGarage}
 				garages={garages}
-				onGarageSelect={setSelectedGarageId}
+				onGarageSelect={handleGarageChange}
 				showFilters={showFilters}
 				onToggleFilters={() => setShowFilters(!showFilters)}
 			/>

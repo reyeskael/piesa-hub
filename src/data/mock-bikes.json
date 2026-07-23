@@ -1,0 +1,32 @@
+[
+	{
+		"bikeId": "bike-001",
+		"year": 2025,
+		"make": "Honda",
+		"model": "CB500F",
+		"plate": "123-ABC",
+		"mileage": 15400,
+		"isPrimary": true,
+		"image": "https://via.placeholder.com/120"
+	},
+	{
+		"bikeId": "bike-002",
+		"year": 2024,
+		"make": "Yamaha",
+		"model": "MT-07",
+		"plate": "456-DEF",
+		"mileage": 8200,
+		"isPrimary": false,
+		"image": "https://via.placeholder.com/120"
+	},
+	{
+		"bikeId": "bike-003",
+		"year": 2023,
+		"make": "Kawasaki",
+		"model": "Z650",
+		"plate": "789-GHI",
+		"mileage": 3100,
+		"isPrimary": false,
+		"image": "https://via.placeholder.com/120"
+	}
+]

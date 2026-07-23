@@ -1,0 +1,10 @@
+{
+	"userId": "user-001",
+	"name": "Alex Rivera",
+	"email": "alex.rivera@example.com",
+	"phone": "+63 910 123 4567",
+	"location": "Quezon City, Metro Manila",
+	"avatar": "https://via.placeholder.com/96",
+	"bikeCount": 3,
+	"savedPartsCount": 12
+}
