@@ -30,15 +30,23 @@ export const ShopsList: React.FC<ShopsListProps> = ({ shops, selectedPartName, p
 				{/* Best Match Section */}
 				{shops.length > 0 && (
 					<Box>
-						<Stack direction="row" alignItems="center" gap={1} sx={{ mb: 2 }}>
-							<Box
-								sx={{
-									width: 8,
-									height: 8,
-									backgroundColor: '#FF6B00',
-									borderRadius: '50%',
-								}}
-							/>
+						<Stack direction="row" alignItems="center" sx={{ mb: 2, gap: 1 }}>
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center'
+                                }}
+                            >
+                                <Box
+                                    sx={{
+                                        width: 8,
+                                        height: 8,
+                                        backgroundColor: '#FF6B00',
+                                        borderRadius: '50%',
+                                    }}
+                                />
+                            </Box>
 							<Typography variant="h6" sx={{ color: '#FFFFFF', fontWeight: 600 }}>
 								Best Match
 							</Typography>
