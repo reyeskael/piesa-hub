@@ -1,0 +1,62 @@
+[
+	{
+		"shopId": "shop-001",
+		"name": "SpeedTech Moto Parts & Supply",
+		"city": "Quezon City",
+		"distance": 0.8,
+		"rating": 4.8,
+		"status": "Open until 7 PM",
+		"unitsInStock": 3,
+		"image": "https://via.placeholder.com/80"
+	},
+	{
+		"shopId": "shop-002",
+		"name": "MotoFix Garage",
+		"city": "Caloocan City",
+		"distance": 1.2,
+		"rating": 4.5,
+		"status": "Open",
+		"unitsInStock": 1,
+		"image": "https://via.placeholder.com/80"
+	},
+	{
+		"shopId": "shop-003",
+		"name": "Rider's Den Parts",
+		"city": "Marikina City",
+		"distance": 2.1,
+		"rating": 4.2,
+		"status": "Open",
+		"unitsInStock": 5,
+		"image": "https://via.placeholder.com/80"
+	},
+	{
+		"shopId": "shop-004",
+		"name": "TurboMoto Shop",
+		"city": "Pasig City",
+		"distance": 3.4,
+		"rating": 4.0,
+		"status": "Closed",
+		"unitsInStock": 2,
+		"image": "https://via.placeholder.com/80"
+	},
+	{
+		"shopId": "shop-005",
+		"name": "MotoPro Philippines",
+		"city": "Mandaluyong City",
+		"distance": 4.2,
+		"rating": 4.6,
+		"status": "Open",
+		"unitsInStock": 8,
+		"image": "https://via.placeholder.com/80"
+	},
+	{
+		"shopId": "shop-006",
+		"name": "BikeZone Supplies",
+		"city": "San Juan City",
+		"distance": 2.8,
+		"rating": 4.3,
+		"status": "Open until 6 PM",
+		"unitsInStock": 4,
+		"image": "https://via.placeholder.com/80"
+	}
+]

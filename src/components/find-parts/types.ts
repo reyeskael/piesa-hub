@@ -16,3 +16,21 @@ export interface FilterValues {
 	category: string;
 	keyword: string;
 }
+
+export interface Shop {
+	shopId: string;
+	name: string;
+	city: string;
+	distance: number;
+	rating: number;
+	status: string;
+	unitsInStock: number;
+	image: string;
+}
+
+export interface Garage {
+	id: string;
+	year: string;
+	make: string;
+	model: string;
+}

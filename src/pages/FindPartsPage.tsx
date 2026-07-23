@@ -1,10 +1,13 @@
 import React, { useMemo, useState } from 'react';
 import { Box, Typography } from '@mui/material';
+import { SearchHeader } from '../components/find-parts/SearchHeader';
 import { PartSearchFilters } from '../components/find-parts/PartSearchFilters';
 import { PartCategoryChips } from '../components/find-parts/PartCategoryChips';
 import { PartResultsList } from '../components/find-parts/PartResultsList';
-import type { FilterValues, PartResult } from '../components/find-parts/types';
+import { ShopsList } from '../components/find-parts/ShopsList';
+import type { FilterValues, PartResult, Garage } from '../components/find-parts/types';
 import mockParts from '../data/mock-parts.json';
+import mockShops from '../data/mock-shops.json';
 
 const years = ['2026', '2025', '2024', '2023', '2022'];
 const makes = ['Honda', 'Yamaha', 'Kawasaki', 'Suzuki'];
@@ -22,9 +25,17 @@ const categories = [
 	'Bodywork',
 ];
 
+const garages: Garage[] = [
+	{ id: '1', year: '2025', make: 'Honda', model: 'CB500F' },
+	{ id: '2', year: '2022', make: 'Yamaha', model: 'MT-07' },
+	{ id: '3', year: '2023', make: 'Kawasaki', model: 'Z650' },
+];
+
 const sampleResults: PartResult[] = mockParts as PartResult[];
 
 export const FindPartsPage: React.FC = () => {
+	const [selectedGarageId, setSelectedGarageId] = useState('1');
+	const [showFilters, setShowFilters] = useState(false);
 	const [filters, setFilters] = useState<FilterValues>({
 		year: '2025',
 		make: 'Honda',
@@ -33,6 +44,7 @@ export const FindPartsPage: React.FC = () => {
 		keyword: '',
 	});
 
+	const selectedGarage = garages.find((g) => g.id === selectedGarageId);
 	const availableModels = useMemo(() => modelOptions[filters.make] ?? [], [filters.make]);
 
 	const filteredResults = useMemo(() => {
@@ -64,33 +76,44 @@ export const FindPartsPage: React.FC = () => {
 		handleFilterChange('model', firstModel);
 	};
 
-	const resetResults = () => {
-		// Placeholder for real search action if needed.
-	};
+	// Calculate price range (mock data - could be dynamic based on parts)
+	const priceRange = '$18 – $25';
+
+	// Sort shops by distance (closest first)
+	const sortedShops = useMemo(() => {
+		return [...mockShops].sort((a, b) => a.distance - b.distance);
+	}, []);
+
+	const firstPartName = filteredResults.length > 0 ? filteredResults[0].name : 'Part';
 
 	return (
-		<Box sx={{ mt: 4 }}>
-			<Typography variant="h4" component="h1" gutterBottom>
-				Find Parts
-			</Typography>
-
-			<Typography variant="body1" sx={{ mb: 4, maxWidth: 680 }}>
-				Use the precision search filters to find compatible motorcycle parts for the year, make, and model in your garage. Select a category and search by part name or OEM number.
-			</Typography>
-
-			<PartSearchFilters
-				years={years}
-				makes={makes}
-				availableModels={availableModels}
-				categories={categories}
-				values={filters}
-				onYearChange={(value) => handleFilterChange('year', value)}
-				onMakeChange={handleMakeChange}
-				onModelChange={(value) => handleFilterChange('model', value)}
-				onCategoryChange={(value) => handleFilterChange('category', value)}
-				onKeywordChange={(value) => handleFilterChange('keyword', value)}
-				onSearch={resetResults}
+		<Box sx={{ mt: 2 }}>
+			{/* Search Header with Garage Selector */}
+			<SearchHeader
+				searchQuery={filters.keyword}
+				onSearchChange={(value) => handleFilterChange('keyword', value)}
+				selectedGarage={selectedGarage}
+				garages={garages}
+				onGarageSelect={setSelectedGarageId}
+				showFilters={showFilters}
+				onToggleFilters={() => setShowFilters(!showFilters)}
 			/>
+
+			{showFilters && (
+				<PartSearchFilters
+					years={years}
+					makes={makes}
+					availableModels={availableModels}
+					categories={categories}
+					values={filters}
+					onYearChange={(value) => handleFilterChange('year', value)}
+					onMakeChange={handleMakeChange}
+					onModelChange={(value) => handleFilterChange('model', value)}
+					onCategoryChange={(value) => handleFilterChange('category', value)}
+					onKeywordChange={(value) => handleFilterChange('keyword', value)}
+					onSearch={() => {}}
+				/>
+			)}
 
 			<PartCategoryChips
 				categories={categories}
@@ -99,6 +122,20 @@ export const FindPartsPage: React.FC = () => {
 			/>
 
 			<PartResultsList results={filteredResults} />
+
+			{/* Shops Section - only show if parts found */}
+			{filteredResults.length > 0 && (
+				<Box sx={{ mt: 6 }}>
+					<Typography variant="h6" sx={{ mb: 3, color: '#FFFFFF', fontWeight: 600 }}>
+						Shops Near You
+					</Typography>
+					<ShopsList
+						shops={sortedShops}
+						selectedPartName={firstPartName}
+						priceRange={priceRange}
+					/>
+				</Box>
+			)}
 		</Box>
 	);
 };
