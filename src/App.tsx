@@ -10,7 +10,7 @@ export const App: React.FC = () => {
 
 	return (
 		<Box sx={{ height: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-			<Container maxWidth="sm" sx={{ flex: 1, overflowY: 'auto' }}>
+			<Container maxWidth="sm" sx={{ flex: 1, overflowY: 'auto', padding: 2 }}>
 				{page === 0 && <HomePage />}
 				{page === 1 && <FindPartsPage />}
 				{page === 2 && <ProfilePage />}

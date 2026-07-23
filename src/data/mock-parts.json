@@ -1,0 +1,1112 @@
+[
+	{
+		"partNumber": "BP-1001",
+		"name": "Front Brake Pads",
+		"category": "Brakes",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "CB500F",
+		"year": "2025",
+		"keywords": [
+			"brake",
+			"pads",
+			"front",
+			"CB500F"
+		]
+	},
+	{
+		"partNumber": "SP-1002",
+		"name": "Spark Plug Set",
+		"category": "Electrical",
+		"compatibility": "Requires Adapter",
+		"make": "Yamaha",
+		"model": "MT-07",
+		"year": "2024",
+		"keywords": [
+			"spark plug",
+			"electrical",
+			"ignition",
+			"MT-07"
+		]
+	},
+	{
+		"partNumber": "FS-1003",
+		"name": "Rear Shock Absorber",
+		"category": "Suspension",
+		"compatibility": "Direct Fit",
+		"make": "Kawasaki",
+		"model": "Z650",
+		"year": "2023",
+		"keywords": [
+			"shock",
+			"absorber",
+			"rear",
+			"Z650"
+		]
+	},
+	{
+		"partNumber": "FW-1004",
+		"name": "Front Fork Seal Kit",
+		"category": "Suspension",
+		"compatibility": "Universal Fit",
+		"make": "Suzuki",
+		"model": "GSX-R600",
+		"year": "2022",
+		"keywords": [
+			"fork",
+			"seal",
+			"suspension",
+			"GSX-R600"
+		]
+	},
+	{
+		"partNumber": "CL-1005",
+		"name": "Clutch Cable",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "Rebel 500",
+		"year": "2025",
+		"keywords": [
+			"clutch",
+			"cable",
+			"transmission",
+			"Rebel 500"
+		]
+	},
+	{
+		"partNumber": "BR-1006",
+		"name": "Brake Rotor",
+		"category": "Brakes",
+		"compatibility": "Requires Adapter",
+		"make": "Yamaha",
+		"model": "YZF-R3",
+		"year": "2025",
+		"keywords": [
+			"rotor",
+			"brake",
+			"disc",
+			"YZF-R3"
+		]
+	},
+	{
+		"partNumber": "BT-1007",
+		"name": "Battery Replacement",
+		"category": "Electrical",
+		"compatibility": "Direct Fit",
+		"make": "Kawasaki",
+		"model": "Ninja 650",
+		"year": "2024",
+		"keywords": [
+			"battery",
+			"charging",
+			"electrical",
+			"Ninja 650"
+		]
+	},
+	{
+		"partNumber": "SR-1008",
+		"name": "Steering Rack Bushing",
+		"category": "Suspension",
+		"compatibility": "Requires Adapter",
+		"make": "Suzuki",
+		"model": "V-Strom 650",
+		"year": "2023",
+		"keywords": [
+			"bushing",
+			"steering",
+			"suspension",
+			"V-Strom 650"
+		]
+	},
+	{
+		"partNumber": "GR-1009",
+		"name": "Grip Set",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Honda",
+		"model": "CRF450R",
+		"year": "2024",
+		"keywords": [
+			"grip",
+			"handlebar",
+			"bodywork",
+			"CRF450R"
+		]
+	},
+	{
+		"partNumber": "LS-1010",
+		"name": "LED Tail Light",
+		"category": "Electrical",
+		"compatibility": "Requires Adapter",
+		"make": "Yamaha",
+		"model": "Tenere 700",
+		"year": "2025",
+		"keywords": [
+			"tail light",
+			"LED",
+			"electrical",
+			"Tenere 700"
+		]
+	},
+	{
+		"partNumber": "KY-1011",
+		"name": "Chain and Sprocket Kit",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Kawasaki",
+		"model": "KX450",
+		"year": "2023",
+		"keywords": [
+			"chain",
+			"sprocket",
+			"transmission",
+			"KX450"
+		]
+	},
+	{
+		"partNumber": "PG-1012",
+		"name": "Passenger Grab Bar",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Suzuki",
+		"model": "SV650",
+		"year": "2022",
+		"keywords": [
+			"grab bar",
+			"bodywork",
+			"passenger",
+			"SV650"
+		]
+	},
+	{
+		"partNumber": "PA-1013",
+		"name": "Air Filter",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "CB500F",
+		"year": "2024",
+		"keywords": [
+			"air filter",
+			"engine",
+			"filter",
+			"CB500F"
+		]
+	},
+	{
+		"partNumber": "FA-1014",
+		"name": "Front Fairing",
+		"category": "Bodywork",
+		"compatibility": "Requires Adapter",
+		"make": "Yamaha",
+		"model": "MT-07",
+		"year": "2023",
+		"keywords": [
+			"fairing",
+			"bodywork",
+			"front",
+			"MT-07"
+		]
+	},
+	{
+		"partNumber": "SL-1015",
+		"name": "Socket Lever Kit",
+		"category": "Engine & Transmission",
+		"compatibility": "Universal Fit",
+		"make": "Kawasaki",
+		"model": "Z650",
+		"year": "2022",
+		"keywords": [
+			"socket",
+			"lever",
+			"tool",
+			"Z650"
+		]
+	},
+	{
+		"partNumber": "TP-1016",
+		"name": "Tank Protector",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Suzuki",
+		"model": "GSX-R600",
+		"year": "2025",
+		"keywords": [
+			"tank",
+			"protector",
+			"bodywork",
+			"GSX-R600"
+		]
+	},
+	{
+		"partNumber": "CF-1017",
+		"name": "Clutch Fluid",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "CRF450R",
+		"year": "2023",
+		"keywords": [
+			"fluid",
+			"clutch",
+			"transmission",
+			"CRF450R"
+		]
+	},
+	{
+		"partNumber": "BS-1018",
+		"name": "Brake Sensor",
+		"category": "Electrical",
+		"compatibility": "Direct Fit",
+		"make": "Yamaha",
+		"model": "YZF-R3",
+		"year": "2024",
+		"keywords": [
+			"brake",
+			"sensor",
+			"electrical",
+			"YZF-R3"
+		]
+	},
+	{
+		"partNumber": "HS-1019",
+		"name": "Handlebar Switch Assembly",
+		"category": "Electrical",
+		"compatibility": "Requires Adapter",
+		"make": "Kawasaki",
+		"model": "Ninja 650",
+		"year": "2025",
+		"keywords": [
+			"switch",
+			"handlebar",
+			"electrical",
+			"Ninja 650"
+		]
+	},
+	{
+		"partNumber": "BP-1020",
+		"name": "Rear Brake Pads",
+		"category": "Brakes",
+		"compatibility": "Direct Fit",
+		"make": "Suzuki",
+		"model": "V-Strom 650",
+		"year": "2024",
+		"keywords": [
+			"brake",
+			"pads",
+			"rear",
+			"V-Strom 650"
+		]
+	},
+	{
+		"partNumber": "SG-1021",
+		"name": "Seat Gel Pad",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Honda",
+		"model": "Rebel 500",
+		"year": "2022",
+		"keywords": [
+			"seat",
+			"gel",
+			"comfort",
+			"Rebel 500"
+		]
+	},
+	{
+		"partNumber": "EG-1022",
+		"name": "Engine Guard",
+		"category": "Bodywork",
+		"compatibility": "Requires Adapter",
+		"make": "Yamaha",
+		"model": "Tenere 700",
+		"year": "2025",
+		"keywords": [
+			"guard",
+			"engine",
+			"bodywork",
+			"Tenere 700"
+		]
+	},
+	{
+		"partNumber": "WP-1023",
+		"name": "Water Pump Replacement",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Kawasaki",
+		"model": "KX450",
+		"year": "2023",
+		"keywords": [
+			"water pump",
+			"engine",
+			"cooling",
+			"KX450"
+		]
+	},
+	{
+		"partNumber": "CB-1024",
+		"name": "Carbon Brake Line",
+		"category": "Brakes",
+		"compatibility": "Requires Adapter",
+		"make": "Suzuki",
+		"model": "SV650",
+		"year": "2024",
+		"keywords": [
+			"brake line",
+			"carbon",
+			"brakes",
+			"SV650"
+		]
+	},
+	{
+		"partNumber": "PC-1025",
+		"name": "Piston Kit",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "CB500F",
+		"year": "2023",
+		"keywords": [
+			"piston",
+			"engine",
+			"kit",
+			"CB500F"
+		]
+	},
+	{
+		"partNumber": "RA-1026",
+		"name": "Radiator Assembly",
+		"category": "Engine & Transmission",
+		"compatibility": "Requires Adapter",
+		"make": "Yamaha",
+		"model": "MT-07",
+		"year": "2022",
+		"keywords": [
+			"radiator",
+			"cooling",
+			"engine",
+			"MT-07"
+		]
+	},
+	{
+		"partNumber": "MN-1027",
+		"name": "Mirror Set",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Kawasaki",
+		"model": "Z650",
+		"year": "2025",
+		"keywords": [
+			"mirror",
+			"bodywork",
+			"accessory",
+			"Z650"
+		]
+	},
+	{
+		"partNumber": "HL-1028",
+		"name": "Headlight Bulb",
+		"category": "Electrical",
+		"compatibility": "Direct Fit",
+		"make": "Suzuki",
+		"model": "GSX-R600",
+		"year": "2024",
+		"keywords": [
+			"headlight",
+			"bulb",
+			"electrical",
+			"GSX-R600"
+		]
+	},
+	{
+		"partNumber": "RC-1029",
+		"name": "Rear Carrier Rack",
+		"category": "Bodywork",
+		"compatibility": "Requires Adapter",
+		"make": "Honda",
+		"model": "Rebel 500",
+		"year": "2025",
+		"keywords": [
+			"carrier",
+			"rack",
+			"bodywork",
+			"Rebel 500"
+		]
+	},
+	{
+		"partNumber": "HS-1030",
+		"name": "Handlebar Stabilizer",
+		"category": "Suspension",
+		"compatibility": "Direct Fit",
+		"make": "Yamaha",
+		"model": "YZF-R3",
+		"year": "2023",
+		"keywords": [
+			"stabilizer",
+			"handlebar",
+			"suspension",
+			"YZF-R3"
+		]
+	},
+	{
+		"partNumber": "EP-1031",
+		"name": "Exhaust Pipe",
+		"category": "Engine & Transmission",
+		"compatibility": "Requires Adapter",
+		"make": "Kawasaki",
+		"model": "Ninja 650",
+		"year": "2024",
+		"keywords": [
+			"exhaust",
+			"pipe",
+			"engine",
+			"Ninja 650"
+		]
+	},
+	{
+		"partNumber": "SY-1032",
+		"name": "Stereo System",
+		"category": "Electrical",
+		"compatibility": "Universal Fit",
+		"make": "Suzuki",
+		"model": "V-Strom 650",
+		"year": "2022",
+		"keywords": [
+			"stereo",
+			"audio",
+			"electrical",
+			"V-Strom 650"
+		]
+	},
+	{
+		"partNumber": "IN-1033",
+		"name": "Ignition Coil",
+		"category": "Electrical",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "CRF450R",
+		"year": "2025",
+		"keywords": [
+			"ignition",
+			"coil",
+			"electrical",
+			"CRF450R"
+		]
+	},
+	{
+		"partNumber": "FD-1034",
+		"name": "Fuel Delivery Pump",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Yamaha",
+		"model": "Tenere 700",
+		"year": "2024",
+		"keywords": [
+			"fuel pump",
+			"engine",
+			"delivery",
+			"Tenere 700"
+		]
+	},
+	{
+		"partNumber": "CT-1035",
+		"name": "Chain Tensioner",
+		"category": "Engine & Transmission",
+		"compatibility": "Requires Adapter",
+		"make": "Kawasaki",
+		"model": "KX450",
+		"year": "2023",
+		"keywords": [
+			"chain",
+			"tensioner",
+			"transmission",
+			"KX450"
+		]
+	},
+	{
+		"partNumber": "PT-1036",
+		"name": "Paint Touch-Up Kit",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Suzuki",
+		"model": "SV650",
+		"year": "2025",
+		"keywords": [
+			"paint",
+			"touch-up",
+			"bodywork",
+			"SV650"
+		]
+	},
+	{
+		"partNumber": "ET-1037",
+		"name": "Exhaust Tip",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Honda",
+		"model": "CB500F",
+		"year": "2023",
+		"keywords": [
+			"exhaust",
+			"tip",
+			"bodywork",
+			"CB500F"
+		]
+	},
+	{
+		"partNumber": "BB-1038",
+		"name": "Brake Booster",
+		"category": "Brakes",
+		"compatibility": "Direct Fit",
+		"make": "Yamaha",
+		"model": "MT-07",
+		"year": "2022",
+		"keywords": [
+			"booster",
+			"brake",
+			"brakes",
+			"MT-07"
+		]
+	},
+	{
+		"partNumber": "RC-1039",
+		"name": "Radio Controller",
+		"category": "Electrical",
+		"compatibility": "Requires Adapter",
+		"make": "Kawasaki",
+		"model": "Z650",
+		"year": "2024",
+		"keywords": [
+			"radio",
+			"controller",
+			"electrical",
+			"Z650"
+		]
+	},
+	{
+		"partNumber": "TK-1040",
+		"name": "Throttle Kit",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Suzuki",
+		"model": "GSX-R600",
+		"year": "2025",
+		"keywords": [
+			"throttle",
+			"kit",
+			"engine",
+			"GSX-R600"
+		]
+	},
+	{
+		"partNumber": "PT-1041",
+		"name": "Pressure Transducer",
+		"category": "Electrical",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "Rebel 500",
+		"year": "2024",
+		"keywords": [
+			"pressure",
+			"transducer",
+			"electrical",
+			"Rebel 500"
+		]
+	},
+	{
+		"partNumber": "LED-1042",
+		"name": "LED Indicator Lights",
+		"category": "Electrical",
+		"compatibility": "Universal Fit",
+		"make": "Yamaha",
+		"model": "YZF-R3",
+		"year": "2023",
+		"keywords": [
+			"LED",
+			"indicator",
+			"electrical",
+			"YZF-R3"
+		]
+	},
+	{
+		"partNumber": "PM-1043",
+		"name": "Passenger Footpeg Mount",
+		"category": "Bodywork",
+		"compatibility": "Requires Adapter",
+		"make": "Kawasaki",
+		"model": "Ninja 650",
+		"year": "2022",
+		"keywords": [
+			"footpeg",
+			"mount",
+			"bodywork",
+			"Ninja 650"
+		]
+	},
+	{
+		"partNumber": "WP-1044",
+		"name": "Windshield Protector",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Suzuki",
+		"model": "V-Strom 650",
+		"year": "2025",
+		"keywords": [
+			"windshield",
+			"protector",
+			"bodywork",
+			"V-Strom 650"
+		]
+	},
+	{
+		"partNumber": "MC-1045",
+		"name": "Mounting Clamp",
+		"category": "Suspension",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "CRF450R",
+		"year": "2025",
+		"keywords": [
+			"clamp",
+			"mount",
+			"suspension",
+			"CRF450R"
+		]
+	},
+	{
+		"partNumber": "VG-1046",
+		"name": "Valve Guide",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Yamaha",
+		"model": "Tenere 700",
+		"year": "2024",
+		"keywords": [
+			"valve",
+			"guide",
+			"engine",
+			"Tenere 700"
+		]
+	},
+	{
+		"partNumber": "WM-1047",
+		"name": "Wheel Mount",
+		"category": "Bodywork",
+		"compatibility": "Requires Adapter",
+		"make": "Kawasaki",
+		"model": "KX450",
+		"year": "2023",
+		"keywords": [
+			"wheel",
+			"mount",
+			"bodywork",
+			"KX450"
+		]
+	},
+	{
+		"partNumber": "SR-1048",
+		"name": "Seat Rail",
+		"category": "Bodywork",
+		"compatibility": "Direct Fit",
+		"make": "Suzuki",
+		"model": "SV650",
+		"year": "2024",
+		"keywords": [
+			"seat",
+			"rail",
+			"bodywork",
+			"SV650"
+		]
+	},
+	{
+		"partNumber": "WP-1049",
+		"name": "Water Pump Hose",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "CB500F",
+		"year": "2022",
+		"keywords": [
+			"hose",
+			"water pump",
+			"engine",
+			"CB500F"
+		]
+	},
+	{
+		"partNumber": "KD-1050",
+		"name": "Keyless Ignition Device",
+		"category": "Electrical",
+		"compatibility": "Requires Adapter",
+		"make": "Yamaha",
+		"model": "MT-07",
+		"year": "2025",
+		"keywords": [
+			"keyless",
+			"ignition",
+			"electrical",
+			"MT-07"
+		]
+	},
+	{
+		"partNumber": "PP-1051",
+		"name": "Front Brake Disc",
+		"category": "Brakes",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "CB500F",
+		"year": "2026",
+		"keywords": [
+			"brake",
+			"disc",
+			"front",
+			"CB500F"
+		]
+	},
+	{
+		"partNumber": "EC-1052",
+		"name": "Engine Control Unit",
+		"category": "Electrical",
+		"compatibility": "Requires Adapter",
+		"make": "Honda",
+		"model": "CRF450R",
+		"year": "2026",
+		"keywords": [
+			"ECU",
+			"electrical",
+			"engine",
+			"CRF450R"
+		]
+	},
+	{
+		"partNumber": "SC-1053",
+		"name": "Seat Cover",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Honda",
+		"model": "Rebel 500",
+		"year": "2026",
+		"keywords": [
+			"seat",
+			"cover",
+			"bodywork",
+			"Rebel 500"
+		]
+	},
+	{
+		"partNumber": "RP-1054",
+		"name": "Rear Parking Light",
+		"category": "Electrical",
+		"compatibility": "Direct Fit",
+		"make": "Yamaha",
+		"model": "MT-07",
+		"year": "2026",
+		"keywords": [
+			"light",
+			"parking",
+			"electrical",
+			"MT-07"
+		]
+	},
+	{
+		"partNumber": "KR-1055",
+		"name": "Knuckle Guard",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Yamaha",
+		"model": "YZF-R3",
+		"year": "2026",
+		"keywords": [
+			"guard",
+			"knuckle",
+			"bodywork",
+			"YZF-R3"
+		]
+	},
+	{
+		"partNumber": "PF-1056",
+		"name": "Precision Fork Seal",
+		"category": "Suspension",
+		"compatibility": "Direct Fit",
+		"make": "Yamaha",
+		"model": "Tenere 700",
+		"year": "2026",
+		"keywords": [
+			"fork",
+			"seal",
+			"suspension",
+			"Tenere 700"
+		]
+	},
+	{
+		"partNumber": "SL-1057",
+		"name": "Steering Lock",
+		"category": "Electrical",
+		"compatibility": "Requires Adapter",
+		"make": "Kawasaki",
+		"model": "Ninja 650",
+		"year": "2026",
+		"keywords": [
+			"steering",
+			"lock",
+			"electrical",
+			"Ninja 650"
+		]
+	},
+	{
+		"partNumber": "RS-1058",
+		"name": "Radiator Screen",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Kawasaki",
+		"model": "Z650",
+		"year": "2026",
+		"keywords": [
+			"screen",
+			"radiator",
+			"bodywork",
+			"Z650"
+		]
+	},
+	{
+		"partNumber": "TP-1059",
+		"name": "Timing Protector",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Kawasaki",
+		"model": "KX450",
+		"year": "2026",
+		"keywords": [
+			"timing",
+			"protector",
+			"engine",
+			"KX450"
+		]
+	},
+	{
+		"partNumber": "HW-1060",
+		"name": "Hand Warmer Kit",
+		"category": "Electrical",
+		"compatibility": "Universal Fit",
+		"make": "Suzuki",
+		"model": "GSX-R600",
+		"year": "2026",
+		"keywords": [
+			"hand",
+			"warmer",
+			"electrical",
+			"GSX-R600"
+		]
+	},
+	{
+		"partNumber": "BF-1061",
+		"name": "Battery Frame",
+		"category": "Bodywork",
+		"compatibility": "Requires Adapter",
+		"make": "Suzuki",
+		"model": "V-Strom 650",
+		"year": "2026",
+		"keywords": [
+			"battery",
+			"frame",
+			"bodywork",
+			"V-Strom 650"
+		]
+	},
+	{
+		"partNumber": "FT-1062",
+		"name": "Fuel Tank Cap",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Suzuki",
+		"model": "SV650",
+		"year": "2026",
+		"keywords": [
+			"tank",
+			"cap",
+			"engine",
+			"SV650"
+		]
+	},
+	{
+		"partNumber": "BT-1063",
+		"name": "Brake Tube",
+		"category": "Brakes",
+		"compatibility": "Direct Fit",
+		"make": "Honda",
+		"model": "CB500F",
+		"year": "2025",
+		"keywords": [
+			"brake",
+			"tube",
+			"brakes",
+			"CB500F"
+		]
+	},
+	{
+		"partNumber": "MT-1064",
+		"name": "Mirror Trim",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Honda",
+		"model": "CRF450R",
+		"year": "2025",
+		"keywords": [
+			"mirror",
+			"trim",
+			"bodywork",
+			"CRF450R"
+		]
+	},
+	{
+		"partNumber": "SP-1065",
+		"name": "Speedometer Pad",
+		"category": "Electrical",
+		"compatibility": "Requires Adapter",
+		"make": "Honda",
+		"model": "Rebel 500",
+		"year": "2025",
+		"keywords": [
+			"speedometer",
+			"pad",
+			"electrical",
+			"Rebel 500"
+		]
+	},
+	{
+		"partNumber": "FS-1066",
+		"name": "Frame Slider",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Yamaha",
+		"model": "MT-07",
+		"year": "2025",
+		"keywords": [
+			"frame",
+			"slider",
+			"bodywork",
+			"MT-07"
+		]
+	},
+	{
+		"partNumber": "OK-1067",
+		"name": "Oil Cooler Kit",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Yamaha",
+		"model": "YZF-R3",
+		"year": "2025",
+		"keywords": [
+			"oil",
+			"cooler",
+			"kit",
+			"YZF-R3"
+		]
+	},
+	{
+		"partNumber": "DS-1068",
+		"name": "Drive Shaft",
+		"category": "Engine & Transmission",
+		"compatibility": "Requires Adapter",
+		"make": "Yamaha",
+		"model": "Tenere 700",
+		"year": "2025",
+		"keywords": [
+			"drive",
+			"shaft",
+			"engine",
+			"Tenere 700"
+		]
+	},
+	{
+		"partNumber": "PT-1069",
+		"name": "Piston Top",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Kawasaki",
+		"model": "Ninja 650",
+		"year": "2024",
+		"keywords": [
+			"piston",
+			"top",
+			"engine",
+			"Ninja 650"
+		]
+	},
+	{
+		"partNumber": "FN-1070",
+		"name": "Frame Nut Set",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Kawasaki",
+		"model": "Z650",
+		"year": "2024",
+		"keywords": [
+			"nut",
+			"set",
+			"engine",
+			"Z650"
+		]
+	},
+	{
+		"partNumber": "CV-1071",
+		"name": "Cabin Vent",
+		"category": "Bodywork",
+		"compatibility": "Universal Fit",
+		"make": "Kawasaki",
+		"model": "KX450",
+		"year": "2024",
+		"keywords": [
+			"vent",
+			"cabin",
+			"bodywork",
+			"KX450"
+		]
+	},
+	{
+		"partNumber": "RK-1072",
+		"name": "Rack Kit",
+		"category": "Bodywork",
+		"compatibility": "Requires Adapter",
+		"make": "Suzuki",
+		"model": "GSX-R600",
+		"year": "2024",
+		"keywords": [
+			"rack",
+			"kit",
+			"bodywork",
+			"GSX-R600"
+		]
+	},
+	{
+		"partNumber": "FL-1073",
+		"name": "Fuel Line",
+		"category": "Engine & Transmission",
+		"compatibility": "Direct Fit",
+		"make": "Suzuki",
+		"model": "V-Strom 650",
+		"year": "2024",
+		"keywords": [
+			"fuel",
+			"line",
+			"engine",
+			"V-Strom 650"
+		]
+	},
+	{
+		"partNumber": "SP-1074",
+		"name": "Speed Sensor",
+		"category": "Electrical",
+		"compatibility": "Direct Fit",
+		"make": "Suzuki",
+		"model": "SV650",
+		"year": "2024",
+		"keywords": [
+			"speed",
+			"sensor",
+			"electrical",
+			"SV650"
+		]
+	}
+]
