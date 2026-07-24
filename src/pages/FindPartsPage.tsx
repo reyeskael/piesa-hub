@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Box, Typography } from '@mui/material';
+import { makeStyles } from 'tss-react/mui';
 import { SearchHeader } from '../components/find-parts/SearchHeader';
 import { PartSearchFilters } from '../components/find-parts/PartSearchFilters';
 import { PartCategoryChips } from '../components/find-parts/PartCategoryChips';
@@ -36,7 +37,22 @@ const garages: Garage[] = mockBikes.map((bike) => ({
 
 const sampleResults: PartResult[] = mockParts as PartResult[];
 
+const useStyles = makeStyles()({
+	root: {
+		marginTop: 16,
+	},
+	shopsSection: {
+		marginTop: 48,
+	},
+	shopsTitle: {
+		marginBottom: 24,
+		color: '#FFFFFF',
+		fontWeight: 600,
+	},
+});
+
 export const FindPartsPage: React.FC = () => {
+	const { classes } = useStyles();
 	const [selectedGarageId, setSelectedGarageId] = useState(garages[0]?.id || '1');
 	const [showFilters, setShowFilters] = useState(false);
 	const [filters, setFilters] = useState<FilterValues>({
@@ -103,7 +119,7 @@ export const FindPartsPage: React.FC = () => {
 	const firstPartName = filteredResults.length > 0 ? filteredResults[0].name : 'Part';
 
 	return (
-		<Box sx={{ mt: 2 }}>
+		<Box className={classes.root}>
 			{/* Search Header with Garage Selector */}
 			<SearchHeader
 				searchQuery={filters.keyword}
@@ -141,8 +157,8 @@ export const FindPartsPage: React.FC = () => {
 
 			{/* Shops Section - only show if parts found */}
 			{filteredResults.length > 0 && (
-				<Box sx={{ mt: 6 }}>
-					<Typography variant="h6" sx={{ mb: 3, color: '#FFFFFF', fontWeight: 600 }}>
+				<Box className={classes.shopsSection}>
+					<Typography variant="h6" className={classes.shopsTitle}>
 						Shops Near You
 					</Typography>
 					<ShopsList

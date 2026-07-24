@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Paper, Stack, Typography } from '@mui/material';
+import { makeStyles } from 'tss-react/mui';
 import { ShopCard } from './ShopCard';
 import { ShopCardCompact } from './ShopCardCompact';
 import type { Shop } from './types';
@@ -10,14 +11,56 @@ interface ShopsListProps {
 	priceRange: string;
 }
 
+const useStyles = makeStyles()({
+	emptyState: {
+		padding: 24,
+		textAlign: 'center',
+		backgroundColor: '#1E1E1E',
+	},
+	emptyTitle: {
+		color: '#FFFFFF',
+	},
+	emptySubtitle: {
+		color: '#9CA3AF',
+		marginTop: 8,
+	},
+	bestMatchHeader: {
+		alignItems: 'center',
+		marginBottom: 16,
+		gap: 8,
+	},
+	bestMatchDotWrapper: {
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	bestMatchDot: {
+		width: 8,
+		height: 8,
+		backgroundColor: '#FF6B00',
+		borderRadius: '50%',
+	},
+	bestMatchTitle: {
+		color: '#FFFFFF',
+		fontWeight: 600,
+	},
+	moreShopsLabel: {
+		color: '#6B7280',
+		marginBottom: 16,
+		textTransform: 'uppercase',
+	},
+});
+
 export const ShopsList: React.FC<ShopsListProps> = ({ shops, selectedPartName, priceRange }) => {
+	const { classes } = useStyles();
+
 	if (shops.length === 0) {
 		return (
-			<Paper sx={{ p: 3, textAlign: 'center', backgroundColor: '#1E1E1E' }}>
-				<Typography variant="subtitle1" sx={{ color: '#FFFFFF' }}>
+			<Paper className={classes.emptyState}>
+				<Typography variant="subtitle1" className={classes.emptyTitle}>
 					No shops found nearby
 				</Typography>
-				<Typography variant="body2" sx={{ color: '#9CA3AF', mt: 1 }}>
+				<Typography variant="body2" className={classes.emptySubtitle}>
 					Try searching for a different part or location.
 				</Typography>
 			</Paper>
@@ -30,24 +73,11 @@ export const ShopsList: React.FC<ShopsListProps> = ({ shops, selectedPartName, p
 				{/* Best Match Section */}
 				{shops.length > 0 && (
 					<Box>
-						<Stack direction="row" alignItems="center" sx={{ mb: 2, gap: 1 }}>
-                            <Box
-                                sx={{
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                    alignItems: 'center'
-                                }}
-                            >
-                                <Box
-                                    sx={{
-                                        width: 8,
-                                        height: 8,
-                                        backgroundColor: '#FF6B00',
-                                        borderRadius: '50%',
-                                    }}
-                                />
-                            </Box>
-							<Typography variant="h6" sx={{ color: '#FFFFFF', fontWeight: 600 }}>
+						<Stack direction="row" className={classes.bestMatchHeader}>
+							<Box className={classes.bestMatchDotWrapper}>
+								<Box className={classes.bestMatchDot} />
+							</Box>
+							<Typography variant="h6" className={classes.bestMatchTitle}>
 								Best Match
 							</Typography>
 						</Stack>
@@ -62,7 +92,7 @@ export const ShopsList: React.FC<ShopsListProps> = ({ shops, selectedPartName, p
 				{/* More Nearby Shops Section */}
 				{shops.length > 1 && (
 					<Box>
-						<Typography variant="body2" sx={{ color: '#6B7280', mb: 2, textTransform: 'uppercase' }}>
+						<Typography variant="body2" className={classes.moreShopsLabel}>
 							More Nearby Shops
 						</Typography>
 						<Stack spacing={0}>

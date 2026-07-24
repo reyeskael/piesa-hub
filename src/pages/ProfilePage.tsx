@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Box } from '@mui/material';
+import { makeStyles } from 'tss-react/mui';
 import { UserProfileHeader } from '../components/garage/UserProfileHeader';
 import { BikeList } from '../components/garage/BikeList';
 import { ReservationsList } from '../components/garage/ReservationsList';
@@ -7,7 +8,14 @@ import mockUser from '../data/mock-user.json';
 import mockBikes from '../data/mock-bikes.json';
 import mockReservations from '../data/mock-reservations.json';
 
+const useStyles = makeStyles()({
+	root: {
+		marginTop: 16,
+	},
+});
+
 export const ProfilePage: React.FC = () => {
+	const { classes } = useStyles();
 	const [selectedBikeId, setSelectedBikeId] = useState('bike-001');
 
 	const handleEditProfile = () => {
@@ -31,7 +39,7 @@ export const ProfilePage: React.FC = () => {
 	};
 
 	return (
-		<Box sx={{ mt: 2 }}>
+		<Box className={classes.root}>
 			{/* User Profile Header */}
 			<UserProfileHeader user={mockUser} onEditProfile={handleEditProfile} />
 

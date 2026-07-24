@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Chip, Stack, Typography } from '@mui/material';
+import { makeStyles } from 'tss-react/mui';
 import AddIcon from '@mui/icons-material/Add';
 import { BikeCard } from './BikeCard';
 
@@ -21,37 +22,53 @@ interface BikeListProps {
 	onAddBike: () => void;
 }
 
+const useStyles = makeStyles()({
+	root: {
+		marginBottom: 32,
+	},
+	header: {
+		justifyContent: 'space-between',
+		alignItems: 'center',
+		marginBottom: 24,
+	},
+	titleRow: {
+		alignItems: 'center',
+		gap: 8,
+	},
+	title: {
+		color: '#FFFFFF',
+		fontWeight: 700,
+	},
+	countChip: {
+		backgroundColor: '#262626',
+		color: '#9CA3AF',
+		fontWeight: 600,
+		height: '24px',
+	},
+	addButton: {
+		color: '#FF6B00',
+		textTransform: 'none',
+		fontSize: '0.9rem',
+		'&:hover': {
+			backgroundColor: 'rgba(255, 107, 0, 0.1)',
+		},
+	},
+});
+
 export const BikeList: React.FC<BikeListProps> = ({ bikes, selectedBikeId, onSelectBike, onAddBike }) => {
+	const { classes } = useStyles();
+
 	return (
-		<Box sx={{ mb: 4 }}>
+		<Box className={classes.root}>
 			{/* Header */}
-			<Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 3 }}>
-				<Stack direction="row" alignItems="center" gap={1}>
-					<Typography variant="h6" sx={{ color: '#FFFFFF', fontWeight: 700 }}>
+			<Stack direction="row" className={classes.header}>
+				<Stack direction="row" className={classes.titleRow}>
+					<Typography variant="h6" className={classes.title}>
 						My Fleet
 					</Typography>
-					<Chip
-						label={bikes.length}
-						sx={{
-							backgroundColor: '#262626',
-							color: '#9CA3AF',
-							fontWeight: 600,
-							height: '24px',
-						}}
-					/>
+					<Chip label={bikes.length} className={classes.countChip} />
 				</Stack>
-				<Button
-					startIcon={<AddIcon />}
-					sx={{
-						color: '#FF6B00',
-						textTransform: 'none',
-						fontSize: '0.9rem',
-						'&:hover': {
-							backgroundColor: 'rgba(255, 107, 0, 0.1)',
-						},
-					}}
-					onClick={onAddBike}
-				>
+				<Button startIcon={<AddIcon />} className={classes.addButton} onClick={onAddBike}>
 					Add Bike
 				</Button>
 			</Stack>
