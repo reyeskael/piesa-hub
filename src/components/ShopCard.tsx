@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Button, Card, CardContent, Chip, Rating, Stack, Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 import StorefrontIcon from '@mui/icons-material/Storefront';
-import type { Shop } from './types';
+import type { Shop } from './find-parts/types';
 
 interface ShopCardProps {
 	shop: Shop;

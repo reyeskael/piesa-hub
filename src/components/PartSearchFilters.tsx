@@ -13,7 +13,7 @@ import {
 	Typography,
 } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
-import type { FilterValues } from './types';
+import type { FilterValues } from './find-parts/types';
 
 interface PartSearchFiltersProps {
 	years: string[];

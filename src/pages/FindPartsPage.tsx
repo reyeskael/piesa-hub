@@ -1,12 +1,12 @@
 import React, { useMemo, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
-import { SearchHeader } from '../components/find-parts/SearchHeader';
-import { PartSearchFilters } from '../components/find-parts/PartSearchFilters';
-import { PartCategoryChips } from '../components/find-parts/PartCategoryChips';
-import { PartResultsList } from '../components/find-parts/PartResultsList';
-import { ShopsList } from '../components/find-parts/ShopsList';
-import type { FilterValues, PartResult, Garage } from '../components/find-parts/types';
+import { SearchHeader } from '../components/SearchHeader';
+import { PartSearchFilters } from '../components/PartSearchFilters';
+import { PartCategoryChips } from '../components/PartCategoryChips';
+import { PartResultsList } from '../components/PartResultsList';
+import { ShopsList } from '../components/ShopsList';
+import type { FilterValues, PartResult, Garage } from '../components/types';
 import mockParts from '../data/mock-parts.json';
 import mockShops from '../data/mock-shops.json';
 import mockBikes from '../data/mock-bikes.json';

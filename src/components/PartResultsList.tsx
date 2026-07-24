@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Card, CardContent, Chip, Grid, Paper, Stack, Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
-import type { PartResult } from './types';
+import type { PartResult } from './find-parts/types';
 
 interface PartResultsListProps {
 	results: PartResult[];

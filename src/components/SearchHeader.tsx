@@ -5,7 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import TuneIcon from '@mui/icons-material/Tune';
-import type { Garage } from './types';
+import type { Garage } from './find-parts/types';
 
 interface SearchHeaderProps {
 	searchQuery: string;
