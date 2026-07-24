@@ -6,7 +6,7 @@ import { PartSearchFilters } from '../components/PartSearchFilters';
 import { PartCategoryChips } from '../components/PartCategoryChips';
 import { PartResultsList } from '../components/PartResultsList';
 import { ShopsList } from '../components/ShopsList';
-import type { FilterValues, PartResult, Garage } from '../components/types';
+import type { FilterValues, PartResult, Garage } from '../models/types';
 import mockParts from '../data/mock-parts.json';
 import mockShops from '../data/mock-shops.json';
 import mockBikes from '../data/mock-bikes.json';

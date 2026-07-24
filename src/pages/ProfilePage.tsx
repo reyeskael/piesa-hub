@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Box } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
-import { UserProfileHeader } from '../components/garage/UserProfileHeader';
-import { BikeList } from '../components/garage/BikeList';
-import { ReservationsList } from '../components/garage/ReservationsList';
+import { UserProfileHeader } from '../components/UserProfileHeader';
+import { BikeList } from '../components/BikeList';
+import { ReservationsList } from '../components/ReservationsList';
 import mockUser from '../data/mock-user.json';
 import mockBikes from '../data/mock-bikes.json';
 import mockReservations from '../data/mock-reservations.json';

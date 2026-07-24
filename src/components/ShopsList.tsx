@@ -3,7 +3,7 @@ import { Box, Paper, Stack, Typography } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 import { ShopCard } from './ShopCard';
 import { ShopCardCompact } from './ShopCardCompact';
-import type { Shop } from './find-parts/types';
+import type { Shop } from '../models/types';
 
 interface ShopsListProps {
 	shops: Shop[];
