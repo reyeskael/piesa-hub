@@ -11,6 +11,13 @@ Select any link below to navigate directly to the corresponding documentation fi
 
 ---
 
+## 📊 Architecture & User Flows
+
+* [Dual-Portal User Flow Diagrams](./user-flow-diagram/README.md)
+  * Visual Mermaid flowcharts and screen navigation hierarchy for both the Rider App (Search, History, Garage) and Merchant Portal.
+
+---
+
 ## 📱 Application Specifications *(Upcoming)*
 
 * [Rider Application Feature Spec](./)
