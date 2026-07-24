@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Card, CardContent, Chip, Stack, Typography } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import { makeStyles } from 'tss-react/mui';
 
 interface Bike {
@@ -19,10 +20,9 @@ interface BikeCardProps {
 	isSelected: boolean;
 }
 
-const useStyles = makeStyles<{ isSelected: boolean; image: string }>()((_theme, { isSelected, image }) => ({
+const useStyles = makeStyles<{ isSelected: boolean; image: string }>()((theme, { isSelected, image }) => ({
 	card: {
-		backgroundColor: '#1E1E1E',
-		borderColor: isSelected ? '#FF6B00' : '#2D2D2D',
+		borderColor: isSelected ? theme.palette.primary.main : theme.palette.divider,
 		border: '1px solid',
 		marginBottom: 16,
 		overflow: 'visible',
@@ -37,8 +37,8 @@ const useStyles = makeStyles<{ isSelected: boolean; image: string }>()((_theme, 
 		marginBottom: 16,
 	},
 	primaryChip: {
-		backgroundColor: '#FF6B00',
-		color: '#FFFFFF',
+		backgroundColor: theme.palette.primary.main,
+		color: theme.palette.common.white,
 		fontWeight: 600,
 		height: '28px',
 		fontSize: '0.85rem',
@@ -49,7 +49,7 @@ const useStyles = makeStyles<{ isSelected: boolean; image: string }>()((_theme, 
 	bikeImage: {
 		width: 80,
 		height: 80,
-		backgroundColor: '#262626',
+		backgroundColor: theme.palette.background.elevated,
 		borderRadius: '8px',
 		backgroundImage: `url(${image})`,
 		backgroundSize: 'cover',
@@ -61,29 +61,24 @@ const useStyles = makeStyles<{ isSelected: boolean; image: string }>()((_theme, 
 		justifyContent: 'space-between',
 	},
 	bikeName: {
-		color: '#FFFFFF',
 		fontWeight: 600,
 	},
 	bikePlate: {
-		color: '#9CA3AF',
 		marginBottom: 4,
 	},
 	bikeMileage: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 	},
 	activeChip: {
-		backgroundColor: 'rgba(34, 197, 94, 0.1)',
-		color: '#22C55E',
+		backgroundColor: alpha(theme.palette.success.main, 0.1),
+		color: theme.palette.success.main,
 		fontWeight: 600,
 		width: '100%',
 	},
 	selectButton: {
-		color: '#FF6B00',
-		borderColor: '#FF6B00',
+		color: theme.palette.primary.main,
+		borderColor: theme.palette.primary.main,
 		textTransform: 'none',
-		'&:hover': {
-			backgroundColor: 'rgba(255, 107, 0, 0.1)',
-		},
 	},
 }));
 

@@ -46,7 +46,6 @@ const useStyles = makeStyles()({
 	},
 	shopsTitle: {
 		marginBottom: 24,
-		color: '#FFFFFF',
 		fontWeight: 600,
 	},
 });

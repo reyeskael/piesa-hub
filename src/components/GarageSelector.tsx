@@ -14,17 +14,17 @@ interface GarageSelectorProps {
 	onSelectGarage: (garageId: string) => void;
 }
 
-const useStyles = makeStyles()({
+const useStyles = makeStyles()((theme) => ({
 	button: {
-		backgroundColor: '#262626',
-		color: '#FFFFFF',
+		backgroundColor: theme.palette.background.elevated,
+		color: theme.palette.text.primary,
 		textTransform: 'none',
 		padding: '10px 16px',
 		borderRadius: '24px',
 		fontSize: '0.95rem',
-		border: '1px solid #2D2D2D',
+		border: `1px solid ${theme.palette.divider}`,
 		'&:hover': {
-			backgroundColor: '#2D2D2D',
+			backgroundColor: theme.palette.divider,
 		},
 	},
 	label: {
@@ -35,7 +35,7 @@ const useStyles = makeStyles()({
 	emoji: {
 		fontSize: '1.2rem',
 	},
-});
+}));
 
 export const GarageSelector: React.FC<GarageSelectorProps> = ({
 	garages,

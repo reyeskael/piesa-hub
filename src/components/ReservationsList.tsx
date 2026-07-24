@@ -1,5 +1,6 @@
 import React from 'react';
 import { Badge, Box, Button, Stack, Typography } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import { makeStyles } from 'tss-react/mui';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
@@ -23,7 +24,7 @@ interface ReservationsListProps {
 	onSeeAll: () => void;
 }
 
-const useStyles = makeStyles<{ isReadyForPickup: boolean }>()((_theme, { isReadyForPickup }) => ({
+const useStyles = makeStyles<{ isReadyForPickup: boolean }>()((theme, { isReadyForPickup }) => ({
 	root: {
 		marginBottom: 32,
 	},
@@ -37,28 +38,27 @@ const useStyles = makeStyles<{ isReadyForPickup: boolean }>()((_theme, { isReady
 		gap: 8,
 	},
 	title: {
-		color: '#FFFFFF',
 		fontWeight: 700,
 	},
 	countBadge: {
 		'& .MuiBadge-badge': {
-			backgroundColor: '#FF6B00',
-			color: '#FFFFFF',
+			backgroundColor: theme.palette.primary.main,
+			color: theme.palette.common.white,
 			fontWeight: 600,
 			fontSize: '0.75rem',
 		},
 	},
 	seeAll: {
-		color: '#FF6B00',
+		color: theme.palette.primary.main,
 		cursor: 'pointer',
 		'&:hover': {
 			textDecoration: 'underline',
 		},
 	},
 	reservationCard: {
-		backgroundColor: '#1E1E1E',
-		border: '1px solid #2D2D2D',
-		borderTop: isReadyForPickup ? '3px solid #22C55E' : '3px solid #2D2D2D',
+		backgroundColor: theme.palette.background.paper,
+		border: `1px solid ${theme.palette.divider}`,
+		borderTop: isReadyForPickup ? `3px solid ${theme.palette.success.main}` : `3px solid ${theme.palette.divider}`,
 		borderRadius: '8px',
 		padding: 16,
 	},
@@ -66,12 +66,12 @@ const useStyles = makeStyles<{ isReadyForPickup: boolean }>()((_theme, { isReady
 		marginBottom: 16,
 	},
 	partName: {
-		color: '#FFFFFF',
+		color: theme.palette.text.primary,
 		fontWeight: 600,
 		marginBottom: 4,
 	},
 	bikeModel: {
-		color: '#9CA3AF',
+		color: theme.palette.text.secondary,
 		display: 'block',
 	},
 	shopRow: {
@@ -79,16 +79,16 @@ const useStyles = makeStyles<{ isReadyForPickup: boolean }>()((_theme, { isReady
 		gap: 8,
 	},
 	shopName: {
-		color: '#FFFFFF',
+		color: theme.palette.text.primary,
 		fontWeight: 600,
 	},
 	shopLocation: {
-		color: '#9CA3AF',
+		color: theme.palette.text.secondary,
 	},
 	statusBadge: {
 		display: 'inline-block',
-		backgroundColor: isReadyForPickup ? 'rgba(34, 197, 94, 0.1)' : 'rgba(255, 107, 0, 0.1)',
-		color: isReadyForPickup ? '#22C55E' : '#FF6B00',
+		backgroundColor: isReadyForPickup ? alpha(theme.palette.success.main, 0.1) : alpha(theme.palette.primary.main, 0.1),
+		color: isReadyForPickup ? theme.palette.success.main : theme.palette.primary.main,
 		fontWeight: 600,
 		padding: '4px 12px',
 		borderRadius: '6px',
@@ -104,19 +104,14 @@ const useStyles = makeStyles<{ isReadyForPickup: boolean }>()((_theme, { isReady
 	metaIcon: {
 		width: 16,
 		height: 16,
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 	},
 	metaText: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 	},
 	viewMapButton: {
-		backgroundColor: '#FF6B00',
-		color: '#FFFFFF',
 		textTransform: 'none',
 		fontWeight: 600,
-		'&:hover': {
-			backgroundColor: '#E05E00',
-		},
 	},
 }));
 

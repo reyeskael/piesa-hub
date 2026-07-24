@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Card, CardContent, Chip, Stack, Typography } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import { makeStyles } from 'tss-react/mui';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import type { Shop } from '../models/types';
@@ -8,11 +9,8 @@ interface ShopCardCompactProps {
 	shop: Shop;
 }
 
-const useStyles = makeStyles<{ isOpen: boolean }>()((_theme, { isOpen }) => ({
+const useStyles = makeStyles<{ isOpen: boolean }>()((theme, { isOpen }) => ({
 	card: {
-		backgroundColor: '#1E1E1E',
-		borderColor: '#2D2D2D',
-		border: '1px solid #2D2D2D',
 		marginBottom: 12,
 	},
 	cardContent: {
@@ -27,10 +25,10 @@ const useStyles = makeStyles<{ isOpen: boolean }>()((_theme, { isOpen }) => ({
 	storeIcon: {
 		width: 40,
 		height: 40,
-		backgroundColor: '#262626',
+		backgroundColor: theme.palette.background.elevated,
 		borderRadius: '6px',
 		padding: 6,
-		color: '#9CA3AF',
+		color: theme.palette.text.secondary,
 		flexShrink: 0,
 	},
 	shopInfo: {
@@ -43,20 +41,20 @@ const useStyles = makeStyles<{ isOpen: boolean }>()((_theme, { isOpen }) => ({
 		marginBottom: 4,
 	},
 	shopName: {
-		color: '#FFFFFF',
+		color: theme.palette.text.primary,
 		fontWeight: 600,
 		whiteSpace: 'nowrap',
 	},
 	statusChip: {
-		backgroundColor: isOpen ? 'rgba(34, 197, 94, 0.1)' : 'rgba(107, 114, 128, 0.1)',
-		color: isOpen ? '#22C55E' : '#6B7280',
+		backgroundColor: isOpen ? alpha(theme.palette.success.main, 0.1) : alpha(theme.palette.text.disabled, 0.1),
+		color: isOpen ? theme.palette.success.main : theme.palette.text.disabled,
 		fontWeight: 500,
 		height: '20px',
 		fontSize: '0.7rem',
 		padding: '4px 8px',
 	},
 	shopLocation: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 	},
 	ratingColumn: {
 		alignItems: 'flex-end',
@@ -68,11 +66,11 @@ const useStyles = makeStyles<{ isOpen: boolean }>()((_theme, { isOpen }) => ({
 		gap: 4,
 	},
 	rating: {
-		color: '#FF6B00',
+		color: theme.palette.primary.main,
 		fontWeight: 600,
 	},
 	unitsInStock: {
-		color: '#9CA3AF',
+		color: theme.palette.text.secondary,
 	},
 }));
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Card, CardContent, Chip, Rating, Stack, Typography } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import { makeStyles } from 'tss-react/mui';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import type { Shop } from '../models/types';
@@ -10,11 +11,8 @@ interface ShopCardProps {
 	partName: string;
 }
 
-const useStyles = makeStyles<{ isOpen: boolean }>()((_theme, { isOpen }) => ({
+const useStyles = makeStyles<{ isOpen: boolean }>()((theme, { isOpen }) => ({
 	card: {
-		backgroundColor: '#1E1E1E',
-		borderColor: '#2D2D2D',
-		border: '1px solid #2D2D2D',
 		marginBottom: 16,
 	},
 	headerRow: {
@@ -28,27 +26,23 @@ const useStyles = makeStyles<{ isOpen: boolean }>()((_theme, { isOpen }) => ({
 	storeIcon: {
 		width: 48,
 		height: 48,
-		backgroundColor: '#262626',
+		backgroundColor: theme.palette.background.elevated,
 		borderRadius: '8px',
 		padding: 8,
-		color: '#9CA3AF',
+		color: theme.palette.text.secondary,
 	},
 	shopDetails: {
 		flex: 1,
 	},
 	shopName: {
-		color: '#FFFFFF',
 		marginBottom: 4,
 	},
 	locationRow: {
 		gap: 8,
 		alignItems: 'center',
 	},
-	city: {
-		color: '#9CA3AF',
-	},
 	distance: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 	},
 	statusRow: {
 		justifyContent: 'space-between',
@@ -59,14 +53,14 @@ const useStyles = makeStyles<{ isOpen: boolean }>()((_theme, { isOpen }) => ({
 		alignItems: 'center',
 	},
 	ratingStars: {
-		color: '#FF6B00',
+		color: theme.palette.primary.main,
 	},
 	ratingValue: {
-		color: '#FFFFFF',
+		color: theme.palette.text.primary,
 	},
 	statusChip: {
-		backgroundColor: isOpen ? 'rgba(34, 197, 94, 0.1)' : 'rgba(107, 114, 128, 0.1)',
-		color: isOpen ? '#22C55E' : '#6B7280',
+		backgroundColor: isOpen ? alpha(theme.palette.success.main, 0.1) : alpha(theme.palette.text.disabled, 0.1),
+		color: isOpen ? theme.palette.success.main : theme.palette.text.disabled,
 		fontWeight: 500,
 	},
 	priceRow: {
@@ -74,25 +68,20 @@ const useStyles = makeStyles<{ isOpen: boolean }>()((_theme, { isOpen }) => ({
 		alignItems: 'center',
 	},
 	unitsText: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 	},
 	price: {
-		color: '#FF6B00',
+		color: theme.palette.primary.main,
 		fontWeight: 600,
 	},
 	reserveButton: {
-		backgroundColor: '#FF6B00',
-		color: '#FFFFFF',
 		padding: 12,
 		fontSize: '1rem',
 		fontWeight: 600,
 		textTransform: 'none',
-		'&:hover': {
-			backgroundColor: '#E05E00',
-		},
 	},
 	chatButton: {
-		color: '#FF6B00',
+		color: theme.palette.primary.main,
 		textTransform: 'none',
 		padding: 8,
 	},
@@ -115,7 +104,7 @@ export const ShopCard: React.FC<ShopCardProps> = ({ shop, priceRange, partName }
 									{shop.name}
 								</Typography>
 								<Stack direction="row" className={classes.locationRow}>
-									<Typography variant="body2" className={classes.city}>
+									<Typography variant="body2">
 										{shop.city}
 									</Typography>
 									<Typography variant="body2" className={classes.distance}>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Card, CardContent, Chip, Stack, Typography } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import { makeStyles } from 'tss-react/mui';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
@@ -22,12 +23,9 @@ interface ReservationCardProps {
 	onViewMap: (reservationId: string) => void;
 }
 
-const useStyles = makeStyles<{ isReadyForPickup: boolean; image: string }>()((_theme, { isReadyForPickup, image }) => ({
+const useStyles = makeStyles<{ isReadyForPickup: boolean; image: string }>()((theme, { isReadyForPickup, image }) => ({
 	card: {
-		backgroundColor: '#1E1E1E',
-		borderColor: '#2D2D2D',
-		border: '1px solid #2D2D2D',
-		borderTop: isReadyForPickup ? '2px solid #22C55E' : '2px solid #2D2D2D',
+		borderTop: isReadyForPickup ? `2px solid ${theme.palette.success.main}` : `2px solid ${theme.palette.divider}`,
 		marginBottom: 16,
 	},
 	cardContent: {
@@ -39,7 +37,7 @@ const useStyles = makeStyles<{ isReadyForPickup: boolean; image: string }>()((_t
 	partImage: {
 		width: 70,
 		height: 70,
-		backgroundColor: '#262626',
+		backgroundColor: theme.palette.background.elevated,
 		borderRadius: '8px',
 		backgroundImage: `url(${image})`,
 		backgroundSize: 'cover',
@@ -50,19 +48,19 @@ const useStyles = makeStyles<{ isReadyForPickup: boolean; image: string }>()((_t
 		flex: 1,
 	},
 	partName: {
-		color: '#FFFFFF',
+		color: theme.palette.text.primary,
 		fontWeight: 600,
 		marginBottom: 4,
 	},
 	partMeta: {
-		color: '#9CA3AF',
+		color: theme.palette.text.secondary,
 	},
 	statusStack: {
 		marginBottom: 16,
 	},
 	statusChip: {
-		backgroundColor: isReadyForPickup ? 'rgba(34, 197, 94, 0.1)' : 'rgba(255, 107, 0, 0.1)',
-		color: isReadyForPickup ? '#22C55E' : '#FF6B00',
+		backgroundColor: isReadyForPickup ? alpha(theme.palette.success.main, 0.1) : alpha(theme.palette.primary.main, 0.1),
+		color: isReadyForPickup ? theme.palette.success.main : theme.palette.primary.main,
 		fontWeight: 600,
 		width: 'fit-content',
 		height: '24px',
@@ -78,19 +76,14 @@ const useStyles = makeStyles<{ isReadyForPickup: boolean; image: string }>()((_t
 	metaIcon: {
 		width: 16,
 		height: 16,
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 	},
 	metaText: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 	},
 	viewMapButton: {
-		backgroundColor: '#FF6B00',
-		color: '#FFFFFF',
 		textTransform: 'none',
 		fontWeight: 600,
-		'&:hover': {
-			backgroundColor: '#E05E00',
-		},
 	},
 }));
 

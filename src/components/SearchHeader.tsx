@@ -17,33 +17,33 @@ interface SearchHeaderProps {
 	onToggleFilters: () => void;
 }
 
-const useStyles = makeStyles<{ showFilters: boolean }>()((_theme, { showFilters }) => ({
+const useStyles = makeStyles<{ showFilters: boolean }>()((theme, { showFilters }) => ({
 	root: {
 		marginBottom: 24,
 	},
 	searchBar: {
 		display: 'flex',
 		alignItems: 'center',
-		backgroundColor: '#262626',
-		border: '1px solid #2D2D2D',
+		backgroundColor: theme.palette.background.elevated,
+		border: `1px solid ${theme.palette.divider}`,
 		borderRadius: '24px',
 		padding: '8px 16px',
 		marginBottom: 16,
 	},
 	searchIcon: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 		marginRight: 8,
 	},
 	searchInput: {
 		flex: 1,
-		color: '#FFFFFF',
+		color: theme.palette.text.primary,
 		'& .MuiInputBase-input::placeholder': {
-			color: '#6B7280',
+			color: theme.palette.text.disabled,
 			opacity: 0.7,
 		},
 	},
 	clearButton: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 	},
 	selectorRow: {
 		gap: 16,
@@ -52,16 +52,16 @@ const useStyles = makeStyles<{ showFilters: boolean }>()((_theme, { showFilters 
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'space-between',
-		backgroundColor: '#262626',
-		border: '1px solid #2D2D2D',
+		backgroundColor: theme.palette.background.elevated,
+		border: `1px solid ${theme.palette.divider}`,
 		borderRadius: '20px',
 		padding: '9.6px 16px',
 		flex: 1,
 		cursor: 'pointer',
 		transition: 'all 0.2s ease',
 		'&:hover': {
-			borderColor: '#FF6B00',
-			backgroundColor: '#2D2D2D',
+			borderColor: theme.palette.primary.main,
+			backgroundColor: theme.palette.divider,
 		},
 	},
 	garageInfo: {
@@ -72,48 +72,36 @@ const useStyles = makeStyles<{ showFilters: boolean }>()((_theme, { showFilters 
 		fontSize: '1.2rem',
 	},
 	garageLabel: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 		display: 'block',
 	},
 	garageName: {
-		color: '#FFFFFF',
+		color: theme.palette.text.primary,
 		fontWeight: 600,
 	},
 	garageExpandIcon: {
-		color: '#9CA3AF',
+		color: theme.palette.text.secondary,
 	},
 	menuPaper: {
-		backgroundColor: '#1E1E1E',
-		border: '1px solid #2D2D2D',
+		border: `1px solid ${theme.palette.divider}`,
 		borderRadius: '8px',
 		marginTop: 8,
 	},
 	menuItem: {
-		backgroundColor: 'transparent',
-		color: '#FFFFFF',
 		padding: '10px 16px',
 		fontSize: '0.95rem',
-		fontWeight: 400,
-		'&:hover': {
-			backgroundColor: '#262626',
-		},
 		'&.Mui-selected': {
-			backgroundColor: 'rgba(255, 107, 0, 0.2)',
-			color: '#FF6B00',
 			fontWeight: 600,
-			'&:hover': {
-				backgroundColor: 'rgba(255, 107, 0, 0.3)',
-			},
 		},
 	},
 	filterButton: {
-		color: showFilters ? '#FF6B00' : '#9CA3AF',
-		borderColor: showFilters ? '#FF6B00' : '#2D2D2D',
+		color: showFilters ? theme.palette.primary.main : theme.palette.text.secondary,
+		borderColor: showFilters ? theme.palette.primary.main : theme.palette.divider,
 		textTransform: 'none',
 		padding: '10px 16px',
 		'&:hover': {
-			borderColor: '#FF6B00',
-			color: '#FF6B00',
+			borderColor: theme.palette.primary.main,
+			color: theme.palette.primary.main,
 		},
 	},
 }));

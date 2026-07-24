@@ -11,17 +11,12 @@ interface ShopsListProps {
 	priceRange: string;
 }
 
-const useStyles = makeStyles()({
+const useStyles = makeStyles()((theme) => ({
 	emptyState: {
 		padding: 24,
 		textAlign: 'center',
-		backgroundColor: '#1E1E1E',
-	},
-	emptyTitle: {
-		color: '#FFFFFF',
 	},
 	emptySubtitle: {
-		color: '#9CA3AF',
 		marginTop: 8,
 	},
 	bestMatchHeader: {
@@ -37,19 +32,18 @@ const useStyles = makeStyles()({
 	bestMatchDot: {
 		width: 8,
 		height: 8,
-		backgroundColor: '#FF6B00',
+		backgroundColor: theme.palette.primary.main,
 		borderRadius: '50%',
 	},
 	bestMatchTitle: {
-		color: '#FFFFFF',
 		fontWeight: 600,
 	},
 	moreShopsLabel: {
-		color: '#6B7280',
+		color: theme.palette.text.disabled,
 		marginBottom: 16,
 		textTransform: 'uppercase',
 	},
-});
+}));
 
 export const ShopsList: React.FC<ShopsListProps> = ({ shops, selectedPartName, priceRange }) => {
 	const { classes } = useStyles();
@@ -57,7 +51,7 @@ export const ShopsList: React.FC<ShopsListProps> = ({ shops, selectedPartName, p
 	if (shops.length === 0) {
 		return (
 			<Paper className={classes.emptyState}>
-				<Typography variant="subtitle1" className={classes.emptyTitle}>
+				<Typography variant="subtitle1">
 					No shops found nearby
 				</Typography>
 				<Typography variant="body2" className={classes.emptySubtitle}>

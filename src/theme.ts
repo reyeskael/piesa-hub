@@ -1,5 +1,12 @@
 import { createTheme } from '@mui/material/styles';
 
+// Registers the custom background.elevated key so theme.palette.background.elevated typechecks
+declare module '@mui/material/styles' {
+	interface TypeBackground {
+		elevated: string;
+	}
+}
+
 const piesaTheme = createTheme({
 	palette: {
 		mode: 'dark',
@@ -14,6 +21,7 @@ const piesaTheme = createTheme({
 		background: {
 			default: '#121212',
 			paper: '#1E1E1E',
+			elevated: '#262626',
 		},
 		success: {
 			main: '#22C55E',

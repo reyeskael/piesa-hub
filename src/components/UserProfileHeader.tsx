@@ -15,7 +15,7 @@ interface UserProfileHeaderProps {
 	onEditProfile: () => void;
 }
 
-const useStyles = makeStyles()({
+const useStyles = makeStyles()((theme) => ({
 	root: {
 		marginBottom: 32,
 	},
@@ -25,19 +25,19 @@ const useStyles = makeStyles()({
 		marginBottom: 24,
 	},
 	title: {
-		color: '#FFFFFF',
+		color: theme.palette.text.primary,
 		fontWeight: 700,
 	},
 	settingsButton: {
-		color: '#9CA3AF',
-		backgroundColor: '#262626',
+		color: theme.palette.text.secondary,
+		backgroundColor: theme.palette.background.elevated,
 		'&:hover': {
-			backgroundColor: '#2D2D2D',
+			backgroundColor: theme.palette.divider,
 		},
 	},
 	userCard: {
-		backgroundColor: '#1E1E1E',
-		border: '1px solid #2D2D2D',
+		backgroundColor: theme.palette.background.paper,
+		border: `1px solid ${theme.palette.divider}`,
 		borderRadius: '12px',
 		padding: 24,
 		marginBottom: 24,
@@ -48,14 +48,13 @@ const useStyles = makeStyles()({
 	avatar: {
 		width: 80,
 		height: 80,
-		backgroundColor: '#262626',
+		backgroundColor: theme.palette.background.elevated,
 	},
 	userInfo: {
 		justifyContent: 'center',
 		flex: 1,
 	},
 	userName: {
-		color: '#FFFFFF',
 		fontWeight: 600,
 	},
 	locationRow: {
@@ -66,10 +65,7 @@ const useStyles = makeStyles()({
 	locationIcon: {
 		width: 16,
 		height: 16,
-		color: '#9CA3AF',
-	},
-	locationText: {
-		color: '#9CA3AF',
+		color: theme.palette.text.secondary,
 	},
 	statsRow: {
 		gap: 16,
@@ -82,18 +78,15 @@ const useStyles = makeStyles()({
 		fontSize: '1rem',
 	},
 	statText: {
-		color: '#FFFFFF',
+		color: theme.palette.text.primary,
 		fontWeight: 600,
 	},
 	editButton: {
-		color: '#FF6B00',
-		borderColor: '#FF6B00',
+		color: theme.palette.primary.main,
+		borderColor: theme.palette.primary.main,
 		textTransform: 'none',
-		'&:hover': {
-			backgroundColor: 'rgba(255, 107, 0, 0.1)',
-		},
 	},
-});
+}));
 
 export const UserProfileHeader: React.FC<UserProfileHeaderProps> = ({ user, onEditProfile }) => {
 	const { classes } = useStyles();
@@ -120,7 +113,7 @@ export const UserProfileHeader: React.FC<UserProfileHeaderProps> = ({ user, onEd
 						</Typography>
 						<Stack direction="row" className={classes.locationRow}>
 							<LocationOnIcon className={classes.locationIcon} />
-							<Typography variant="body2" className={classes.locationText}>
+							<Typography variant="body2">
 								{user.location}
 							</Typography>
 						</Stack>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Chip, Stack, Typography } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import { makeStyles } from 'tss-react/mui';
 import AddIcon from '@mui/icons-material/Add';
 import { BikeCard } from './BikeCard';
@@ -22,7 +23,7 @@ interface BikeListProps {
 	onAddBike: () => void;
 }
 
-const useStyles = makeStyles()({
+const useStyles = makeStyles()((theme) => ({
 	root: {
 		marginBottom: 32,
 	},
@@ -36,24 +37,21 @@ const useStyles = makeStyles()({
 		gap: 8,
 	},
 	title: {
-		color: '#FFFFFF',
 		fontWeight: 700,
 	},
 	countChip: {
-		backgroundColor: '#262626',
-		color: '#9CA3AF',
 		fontWeight: 600,
 		height: '24px',
 	},
 	addButton: {
-		color: '#FF6B00',
+		color: theme.palette.primary.main,
 		textTransform: 'none',
 		fontSize: '0.9rem',
 		'&:hover': {
-			backgroundColor: 'rgba(255, 107, 0, 0.1)',
+			backgroundColor: alpha(theme.palette.primary.main, 0.1),
 		},
 	},
-});
+}));
 
 export const BikeList: React.FC<BikeListProps> = ({ bikes, selectedBikeId, onSelectBike, onAddBike }) => {
 	const { classes } = useStyles();
